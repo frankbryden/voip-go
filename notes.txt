@@ -1,0 +1,8 @@
+finally got an initial version working.
+Can hear myself speak, voice is transmitted correctly.
+2 issues first of all:
+ - audio quality is terrible, choppy is the main issue
+ - stream falls waaayy behind. Buffers fill up I guess as delay between voice recorded and voice played increases as time goes on
+Very exciting nonetheless!
+
+ok wow this is insane, just increasing the buffer size of mic data from 64 to 256 bytes fixes all the aforementioned issues.
