@@ -15,7 +15,7 @@ func NewServer() *Server {
 }
 
 func (s *Server) Listen() {
-	ln, err := net.Listen("tcp", "localhost:8080")
+	ln, err := net.Listen("tcp", ":8091")
 	fmt.Println("Listening on 8080")
 	if err != nil {
 		fmt.Println(err)

@@ -17,7 +17,7 @@ func NewClient(port int) *Client {
 }
 
 func (c *Client) Connect() bool {
-	conn, err := net.Dial("tcp", ":8080")
+	conn, err := net.Dial("tcp", ":8091")
 	if err != nil {
 		// handle error
 		fmt.Println(err)
